@@ -1,0 +1,14 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   scope: '@project/frontend',
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '5.1.6',
+0 silly argv   '$0': '..\\..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js',
+0 silly argv   pkg: '@my-project/validator'
+0 silly argv }
+1 notice cli v5.1.6
+2 verbose rootPath C:\Users\Camila\Desktop\Camila\monorepo\my-project
+3 error HttpErrorGeneral: 405 Method Not Allowed - GET https://registry.npmjs.org/@my-project%2fvalidator/@my-project%2fvalidator
+3 error     at C:\Users\Camila\AppData\Roaming\npm\node_modules\lerna\node_modules\npm-registry-fetch\lib\check-response.js:93:15
+3 error     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+3 error     at async RegistryFetcher.packument (C:\Users\Camila\AppData\Roaming\npm\node_modules\lerna\node_modules\pacote\lib\registry.js:92:19)
