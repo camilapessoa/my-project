@@ -2,11 +2,12 @@
 **Primeiros Passos**:
 
 **As ferramentas que vamos utilizar:**
- Node.js
- React
- Lerna
- npm: atenção ao [npm scoped package](https://docs.npmjs.com/cli/v8/using-npm/scope)
- git
+
+ - Node.js
+ - React
+ - Lerna
+ - npm: atenção ao [npm scoped package](https://docs.npmjs.com/cli/v8/using-npm/scope)
+ - git
 
 **Projeto:**
 Vamos começar com um exemplo mais simples e criar uma aplicação para o Back-End e outra para o Front-End.
@@ -16,13 +17,14 @@ Um monorepo não significa que é “tudo junto e misturado”, então vamos cri
 -logger: uma biblioteca/package customizada
 
 A estrutura dos arquivos do nosso Monorepo ficará assim:
+
 ```md
-packages/       	  # pasta com as bibliotecas
-../validator     # helpers para validação
-../logger        # biblioteca de logger
-apps/            	  # pasta para aplicações/servidor
-../api           # API backend
-../frontend      # frontend
+packages/          # pasta com as bibliotecas
+  ../validator     # helpers para validação
+  ../logger        # biblioteca de logger
+apps/           	  # pasta para aplicações/servidor
+  ../api           # API backend
+  ../frontend      # frontend
 ```
 
 **1 - Criar o Monorepo**
@@ -87,7 +89,9 @@ exports.warn = (...args) => log(YELLOW, ...args);
 exports.error = (...args) => log(RED, ...args);
 ```
 **4 - Crie agora um package para nossa “API”**
+
 4.1 - Criar e inicializar o package ``` @my-project/api ```
+
 ```
 # Na pasta raiz do seu repositório
 # Crie uma pasta app 
@@ -121,6 +125,7 @@ app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
 ```
 
 4.1.3 Adicione um inicializador ao ``` apps/api/package.json```:
+
 ```json
 "scripts": {
   "start": "node index.js"
