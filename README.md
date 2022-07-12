@@ -22,7 +22,7 @@ A estrutura dos arquivos do nosso Monorepo ficará assim:
 packages/          # pasta com as bibliotecas
   ../validator     # helpers para validação
   ../logger        # biblioteca de logger
-apps/           	  # pasta para aplicações/servidor
+apps/             # pasta para aplicações/servidor
   ../api           # API backend
   ../frontend      # frontend
 ```
